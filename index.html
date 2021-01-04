@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>PingIdentity</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar d-none d-md-block bg-white" >
+        <div class="container">
+          <h2 class="navbar-brand" href="#">
+            <img src="logo.svg" height="20">
+          </h2>
+          <a href="#">Gartner Named Us a Leader. Get the Report</a>
+          <div class="d-flex">
+            <form class="form-inline">
+              <div class="collapse" id="collapseInput">
+                <input class="form-control mr-sm-2 collapse" type="search" placeholder="Search" aria-label="Search">
+              </div>
+              <i class="fa fa-search" style="cursor: pointer;" data-toggle="collapse" data-target="#collapseInput" aria-expanded="false" aria-controls="collapseInput"></i>
+            </form>
+            <span class="mx-2">|</span>
+            <div class="dropdown show">
+              <i class="fa fa-globe" style="cursor: pointer;"  role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownLang">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Francias</a>
+                <a class="dropdown-item" href="#">Deutsch</a>
+              </div>
+            </div>
+            <span class="mx-2"> |</span>
+            <div class="dropdown show">
+              <span class="dropdown-toggle" href="#" role="button" id="dropdownPartners" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Partners
+              </span>
+              <div class="dropdown-menu" aria-labelledby="dropdownPartners">
+                <a class="dropdown-item" href="#">Partner Portal Login</a>
+                <a class="dropdown-item" href="#">Find a Partner</a>
+                <a class="dropdown-item" href="#">Become a Partner</a>
+              </div>
+            </div>
+            <span class="mx-2">|</span>
+            <a href="#">Sign On</a>
+          </div>
+        </div>
+      </nav>
+
+      <nav id="nav2" class="navbar navbar-expand-lg navbar-dark" style="background-color: #263746" >
+        <div class="container">
+          <a class="navbar-brand d-block d-md-none" href="#">
+            <img src="logo.svg" height="20">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#1">For Customers</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#2">For Workforce</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#3">Success Stories</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#4">Resources</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#5">Company</a>
+                </li>
+
+                <li class="nav-item active">
+                  <a class="nav-link" href="#6">Support</a>
+              </li>
+            </ul>
+
+            <div>
+              <button type="button" class="btn btn-light" onclick="window.alert(count++)">CONTACT SALES</button>
+              <button id="PING" type="button" class="btn btn-outline-light" onclick="changeColor()">TRY PING</button>
+            </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <img class="bd-placeholder-img w-100" src="image.jpg" style="filter: blur(8px);">
+        <h1 style="font-size:50px; color: wheat; font-weight: bold;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);z-index: 2;width: 80%;padding: 20px;text-align: center;">The Hard Parts of JWT Security Nobody Talks About</h1>
+        <!-- <div class="bg-text">
+        </div> -->
+
+    </main>
+    <!-- Optional JavaScript -->
+    <script>
+    count = 1;
+
+    function randColor(){
+        var r = Math.floor(Math.random()*255)+1;
+        var g = Math.floor(Math.random()*255)+1;
+        var b = Math.floor(Math.random()*255)+1;
+        return "rgb("+r+", "+g+", "+b+")"
+    }
+
+    function trans(){
+        for (i of $("#nav2 a")){
+            i.style.backgroundColor="transparent";
+        }
+    }
+
+    function changeColor(){
+        color = randColor()
+        document.getElementById("PING").style.backgroundColor = color;
+    }
+
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script> -->
+    //  <!-- Optional JQuery -->
+        $(function(){
+          var i = 0;
+          var j = 0;
+          var n = $("#nav2 li").length;
+          function loop() {
+            setTimeout(() => {
+              $("#nav2 li")[i].style.backgroundColor = randColor();
+              i++;
+              if (i < n) {
+                  loop();
+              }
+              else {
+                  reloop();
+              }
+            }, 1000);
+          }
+
+          loop();
+          function reloop() {
+            setTimeout(() => {
+              $("#nav2 li")[j].removeAttribute("style");
+              j++;
+              if (j < n) {
+                reloop();
+              }
+            }, 1000);
+          }
+        });
+    </script>
+  </body>
+</html>
